@@ -90,5 +90,7 @@ export async function searchPipe(msg: string) {
   )
 
   const data = await tvdbSearch(title)
+  // test
+  console.log(data)
 }
 

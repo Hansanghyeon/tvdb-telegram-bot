@@ -6,7 +6,7 @@ import { pipe, flow }  from "https://deno.land/x/fp_ts@v2.11.4/function.ts";
 import { chain } from "https://deno.land/x/fp_ts@v2.11.4/IO.ts"
 // =============== module
 import { getShibes } from './shibe_api.ts'
-import { searchPipe } from './tvdb.ts'
+import { searchPipe } from './tvdb/index.ts'
 
 const bot = new Bot(Deno.env.get("BOT_TOKEN") as string);
 
