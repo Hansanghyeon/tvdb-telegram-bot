@@ -4,7 +4,11 @@ import * as RA from "https://deno.land/x/fp_ts@v2.11.4/ReadonlyNonEmptyArray.ts"
 import * as S from "https://deno.land/x/fp_ts@v2.11.4/string.ts";
 import { pipe, flow } from "https://deno.land/x/fp_ts@v2.11.4/function.ts";
 import * as TE from "https://deno.land/x/fp_ts@v2.11.4/TaskEither.ts";
-
+import * as R from "https://deno.land/x/fp_ts@v2.11.4/Record.ts";
+import * as A from "https://deno.land/x/fp_ts@v2.11.4/Array.ts";
+import { Predicate } from "https://deno.land/x/fp_ts@v2.11.4/Predicate.ts";
+import * as O from "https://deno.land/x/fp_ts@v2.11.4/Option.ts";
+import { convertData } from './convert.ts'
 
 const TVDB_API_KEY = Deno.env.get('TVDB_API_KEY')
 const TVDB_PIN = Deno.env.get('TVDB_PIN')
@@ -54,7 +58,7 @@ let TVDB_TOKEN = await tvdbLogin()
 // search test
 export async function tvdbSearch(query: string) {
   const headers = getHeaders(TVDB_TOKEN)
-  const data = await axiod({
+  const res = await axiod({
     method: "get",
     url: `${TVDB_ENDPOINT}/search`,
     headers, 
@@ -65,7 +69,7 @@ export async function tvdbSearch(query: string) {
     .then(res => res.data)
     .catch(err => console.error(err))
   
-  return data
+  return res
 }
 
 /**
@@ -79,18 +83,74 @@ export function sonarrSearchEpisode(msg: string): string {
 	)(msg)
 }
 
-export function convertData(data: Record<string, any>): Record<string, any> {
-  return data
+/**
+ * 시리즈 아이디를 찾기
+ **/
+interface findSeriesItemProps {
+  objectID: string;
+  overviews: Record<string, any>;
+  [key: string]: any;
 }
+function findSeries(data: findSeriesItemProps[]) {
+  const isSeriesObject: Predicate<findSeriesItemProps> = (item) => 
+    item.objectID.startsWith('series-') && 'kor' in item.overviews;
 
-export async function searchPipe(msg: string) {
-  const title = pipe(
-    msg,
-    sonarrSearchEpisode,
+  const result = pipe(
+    data,
+    A.filter(isSeriesObject),
+    A.head,
   )
 
-  const data = await tvdbSearch(title)
-  // test
-  console.log(data)
+  return result
 }
 
+async function tvdbSearchSeries(id: string) {
+  const headers = getHeaders(TVDB_TOKEN)
+  const res = await axiod({
+    method: "get",
+    url: `${TVDB_ENDPOINT}/series/${id}/translations/kor`,
+    headers,
+  })
+    .then(res => res.data)
+    .catch(err => console.error(err))
+
+  return res
+}
+
+export async function tvdbMessage(query: string) {
+  const search_res = await tvdbSearch(query)
+
+  const search_find_series = pipe(
+    findSeries(search_res?.data),
+    O.fold(
+      // onEmpty
+      () => undefined,
+      // NonEmpty
+      itme => itme
+    )
+  )
+
+  if (search_find_series === undefined)
+    throw new Error(`===== 시리즈를 찾을 수 없습니다=====\n검색어: ${query}`)
+
+  const series_id = pipe(
+    search_find_series,
+    item => item.objectID,
+    S.replace('series-', '')
+  )
+  const series_res = await tvdbSearchSeries(series_id as string)
+
+  const search = search_res
+  search.data = [search_find_series]
+  const result = {
+    search,
+    series: series_res,
+  }
+
+  const res = pipe(
+    // data 검색완료
+    result,
+    convertData
+  )
+  return res
+}

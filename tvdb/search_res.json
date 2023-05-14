@@ -1,0 +1,159 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "objectID": "list-14987",
+            "id": "list-14987",
+            "image_url": "https://artworks.thetvdb.com/banners/v4/series/407520/posters/63aa960baeb43.jpg",
+            "name": "The Eminence in Shadow [Franchise]",
+            "primary_type": "list",
+            "type": "list",
+            "tvdb_id": "14987",
+            "translations": {
+                "eng": "The Eminence in Shadow [Franchise]"
+            }
+        },
+        {
+            "objectID": "series-407520",
+            "aliases": [
+                "Kage no Jitsuryokusha ni Naritakute!",
+                "To Be a Power in the Shadows!",
+                "Shadow Garden",
+                "Je veux devenir une personne puissante dans l'ombre !",
+                "Kage no Jitsuryokusha ni Naritakute",
+                "想要成為影之實力者！",
+                "我想成为影之强者！"
+            ],
+            "country": "jpn",
+            "id": "series-407520",
+            "image_url": "https://artworks.thetvdb.com/banners/v4/series/407520/posters/63aa961fc5730.jpg",
+            "name": "陰の実力者になりたくて!",
+            "first_air_time": "2022-10-05",
+            "overview": "彼は子供の頃から、影の中で活動するシャドウブローカーになりたいと思っていました。 彼は体を鍛え、世界で可能な限りのことをすべて行い、ある日トレーニングセッションの1つで魔法に遭遇するまで、 しかし、これは魔法ではなく、実際には車のヘッドライトでした。 そして、彼は死にました。",
+            "primary_language": "jpn",
+            "primary_type": "series",
+            "status": "Continuing",
+            "type": "series",
+            "tvdb_id": "407520",
+            "year": "2022",
+            "slug": "kage-no-jitsuryokusha-ni-naritakute",
+            "overviews": {
+                "deu": "„Shadowbrokers“ geben sich als unauffällige Menschen aus und bleiben so unbemerkt. In Wahrheit ziehen sie hinter den Kulissen die Fäden und kontrollieren so nahezu alles. Cid möchte auch unbedingt ein „Shadowbroker“ werden und etwas so bedeutungsloses wie die langweilige Realität wird ihm nicht im Weg stehen! Also trainiert er jede Nacht im Geheimen und bereitet vor...",
+                "eng": "Shadowbrokers are those who go unnoticed, posing as unremarkable people, when in truth, they control everything from behind the scenes. Sid wants to be someone just like that more than anything, and something as insignificant as boring reality isn't going to get in his way! He trains in secret every single night, preparing for his eventual rise to power—only to denied his destiny by a run-of-the-mill (yet deadly) traffic accident. But when he wakes up in a another world and suddenly finds himself at the head of an actual secret organization doing battle with evil in the shadows, he'll finally get a chance to act out all of his delusional fantasies!",
+                "fra": "Sous son apparence de lycéen sans histoire, Cid Kagenou aspire pour autant à devenir celui qui tirera les ficelles au sein des plus grandes organisations secrètes. Malheureusement, un tragique accident de la route l’empêche de réaliser son dessein. Pourtant, à son réveil, il découvre qu’il s’est réincarné dans la peau d’un homme dirigeant une véritable société secrète, Shadow Garden, qui lutte contre le culte de Diabolos. Bien décidé à prendre son rôle au sérieux, il est fin prêt à recruter des membres afin mettre à profit son ingéniosité contre les forces du mal.",
+                "ita": "Minoru Kageno ha sempre ammirato i supereroi fin da bambino e nel corso della vita si è allenato per diventare più forte, finché un giorno in seguito a un incidente non si è reincarnato in un altro mondo dove esiste la magia. Ora si fa chiamare Shadow e insieme alle ragazze che ha salvato affronterà malvagi e demoni per diventare l'eminenza grigia che controlla tutto dall'ombra.",
+                "jpn": "彼は子供の頃から、影の中で活動するシャドウブローカーになりたいと思っていました。 彼は体を鍛え、世界で可能な限りのことをすべて行い、ある日トレーニングセッションの1つで魔法に遭遇するまで、 しかし、これは魔法ではなく、実際には車のヘッドライトでした。 そして、彼は死にました。",
+                "kor": "“어둠의 실력자”\r\n\r\n그것은 주인공도 라스트 보스도 아니다.\r\n\r\n평소에는 실력을 숨기고 모브에 투철하고, 이야기에 어둠으로 개입해 은밀하게 실력을 보여주는 존재.\r\n\r\n\r\n이『어둠의 실력자』를 동경해, 매일 모브로서 눈에 띄지 않고 생활하면서, 힘을 찾아 정진하던 소년은사고로 목숨을 잃고 이세계로 환생한다.\r\n\r\n‘시드카게노’로 다시 태어난 소년은, 이를 다행으로 여기고 이세계에서‘어둠의 실력자＇라는 설정을 즐기기로 한다.\r\n\r\n‘망상’으로 만들어낸 『어둠의 교단』을 쓰러뜨리기 위해(장난으로) 암약하고 있었는데, 아무래도 망상으로 만들어낸 『어둠의 교단』이 정말로 존재하는데……?\r\n\r\n\r\n게다가 별생각 없이 부하로 삼은 소녀들의 『착각』으로 인해 ‘시드’를 숭배하고,\r\n\r\n‘시드’는 본인도 모르는 사이에 진짜 『어둠의 실력자』가 되어간다.\r\n그리고 ‘시드’가 이끄는 어둠의 조직 『섀도우 가든』은, 이윽고 세상의 어둠을 멸망시켜 간다────!!",
+                "por": "Muitos admiram heróis e vilões, mas Cid Kagenou sempre desejou ser como aqueles que agem por entre as sombras das histórias. Percebendo que nunca seria capaz de conseguir atingir seus objetivo, Cid se surpreende ao se ver reencarnado em um mundo onde tem as capacidades necessárias para se tornar o que sempre admirou. A partir de então, ele cria uma falsa organização, com o objetivo de agir como um figurante qualquer, mas que trabalha por entrelinhas para confrontar um culto secreto que entrou em seu caminho.",
+                "pt": "Muitos admiram heróis e vilões, mas Cid Kagenou sempre desejou ser como aqueles que agem por entre as sombras das histórias. Percebendo que nunca seria capaz de conseguir atingir seus objetivo, Cid se surpreende ao se ver reencarnado em um mundo onde tem as capacidades necessárias para se tornar o que sempre admirou. A partir de então, ele cria uma falsa organização, com o objetivo de agir como um figurante qualquer, mas que trabalha por entrelinhas para confrontar um culto secreto que entrou em seu caminho.",
+                "rus": "Сид Кагено всегда хотел быть героем. Но не спасителем, известным на весь мир, а незримой тенью, действующей из-за кулис. Ради достижения своей мечты Сид усердно учился и тренировался, никому не показывая своих способностей. Но как бы он ни старался, против ружей и танков ему не выстоять. Единственный способ одолеть армию в одиночку — овладеть магией! В поисках магии он опробовал всё что только мог и нашел единственное средство: грузовик. Переродившись в другом мире, Сид исполнит свою мечту стать Теневым Владыкой!",
+                "spa": "Cuando Cid es enviado a otro mundo, crea una organización clandestina para luchar contra una secta ficticia. Lo que no sabe es que la secta es real, ¡y que no están contentos con que su fantasía de poder haya impedido sus planes!",
+                "zho": "“影之实力者” - 既不是主人公，也不是终极大BOSS，而是平日里彻底隐藏自己的实力、在暗中介入事件并施展自身实力的存在。憧憬着“影之实力者”、每天过着不起眼的生活、为了追求力量而修行的少年，在事故中丧生，转生到了异世界。\r\n\r\n重生为希德·卡盖诺的少年庆幸地在异世界享受着“影之实力者”这个设定，为了打倒“妄想”出来的“黑暗教团”而暗中活动的时候，却发现“黑暗教团”似乎真的存在……?收为部下的少女们因为会错意误把席德作为影而崇拜，席德在一无所知的状况下成为了真正的“影之实力者”，他们一行人建立所起来的“暗影庭园”将毁灭这个世界上的黑暗――。"
+            },
+            "translations": {
+                "deu": "The Eminence in Shadow",
+                "eng": "The Eminence in Shadow",
+                "fra": "The Eminence in Shadow",
+                "ita": "The Eminence in Shadow - Un giorno sarò l'eminenza grigia",
+                "jpn": "陰の実力者になりたくて!",
+                "kor": "어둠의 실력자가 되고 싶어서!",
+                "por": "Kage no Jitsuryokusha ni Naritakute!",
+                "pt": "Kage no Jitsuryokusha ni Naritakute!",
+                "rus": "Восхождение в тени!",
+                "spa": "The Eminence in Shadow",
+                "zho": "想要成为影之实力者！",
+                "zhtw": "我想成為影之強者！"
+            },
+            "network": "AT-X",
+            "remote_ids": [
+                {
+                    "id": "10.5240/E69A-3E92-5F1E-DD19-DB67-8",
+                    "type": 13,
+                    "sourceName": "EIDR"
+                },
+                {
+                    "id": "https://the-eminence-in-shadow.fandom.com/wiki/To_Be_a_Power_in_the_Shadows!_Wiki",
+                    "type": 8,
+                    "sourceName": "Fan Site"
+                },
+                {
+                    "id": "tt14115938",
+                    "type": 2,
+                    "sourceName": "IMDB"
+                },
+                {
+                    "id": "https://shadow-garden.jp/",
+                    "type": 4,
+                    "sourceName": "Official Website"
+                },
+                {
+                    "id": "TheEminenceInShadow",
+                    "type": 7,
+                    "sourceName": "Reddit"
+                },
+                {
+                    "id": "119495",
+                    "type": 12,
+                    "sourceName": "TheMovieDB.com"
+                },
+                {
+                    "id": "63236",
+                    "type": 19,
+                    "sourceName": "TV Maze"
+                },
+                {
+                    "id": "Shadowgarden_PR",
+                    "type": 6,
+                    "sourceName": "Twitter"
+                },
+                {
+                    "id": "Q105751950",
+                    "type": 18,
+                    "sourceName": "Wikidata"
+                },
+                {
+                    "id": "The_Eminence_in_Shadow",
+                    "type": 24,
+                    "sourceName": "Wikipedia"
+                }
+            ],
+            "thumbnail": "https://artworks.thetvdb.com/banners/v4/series/407520/posters/63aa961fc5730_t.jpg"
+        },
+        {
+            "objectID": "series-431356",
+            "aliases": [
+                "Kagejitsu!",
+                "Kage-jitsu!",
+                "Kage no Jitsuryokusha ni Naritakute! Mini Anime",
+                "The Eminence in Shadow Mini Anime"
+            ],
+            "country": "jpn",
+            "id": "series-431356",
+            "image_url": "https://artworks.thetvdb.com/banners/images/missing/series.jpg",
+            "name": "かげじつ!",
+            "first_air_time": "2022-10-26",
+            "primary_language": "jpn",
+            "primary_type": "series",
+            "status": "Continuing",
+            "type": "series",
+            "tvdb_id": "431356",
+            "year": "2022",
+            "slug": "kagejitsu",
+            "overviews": {
+                "eng": "Mini animations featuring characters from the Kage no Jitsuryokusha ni Naritakute! anime posted on the KADOKAWA Anime YouTube channel."
+            },
+            "translations": {
+                "eng": "Kagejitsu!",
+                "jpn": "かげじつ!"
+            },
+            "network": "AT-X"
+        }
+    ],
+    "links": {
+        "prev": null,
+        "self": "https://api4.thetvdb.com/v4/search?query=The Eminence in Shadow&limit=50&page=0",
+        "next": null,
+        "total_items": 3,
+        "page_size": 50
+    }
+}

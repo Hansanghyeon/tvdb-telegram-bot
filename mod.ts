@@ -6,7 +6,8 @@ import { pipe, flow }  from "https://deno.land/x/fp_ts@v2.11.4/function.ts";
 import { chain } from "https://deno.land/x/fp_ts@v2.11.4/IO.ts"
 // =============== module
 import { getShibes } from './shibe_api.ts'
-import { searchPipe } from './tvdb/index.ts'
+import { tvdbMessage } from './tvdb/index.ts'
+import obj2list from './tvdb/obj2list.ts'
 
 const bot = new Bot(Deno.env.get("BOT_TOKEN") as string);
 
@@ -26,8 +27,21 @@ bot.on("text", async (ctx) => {
   const text = ctx.message?.text;
 
   if (text.includes('Episode Grabbed\n')) {
-    await ctx.reply('에피소트 찾았다는 문구')
-    searchPipe(text)
+    let query = text.replace('Episode Grabbed\n', '')
+    query = query.split(' - ')
+    query = query[0]
+
+    try {
+      const msgObj = await tvdbMessage(query)
+      const message = pipe(
+        msgObj,
+        obj2list,
+      )
+      await ctx.reply(message)
+    } catch (error) {
+      console.log('===error===')
+      console.error(error.message)
+    }
   }
 
   if (text === '/shibe' || text === '/shibe@hyeon_function_test_bot') {
